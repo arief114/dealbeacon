@@ -1,0 +1,108 @@
+/* DealBeacon — Black Friday 2026. Dark theme, amber accents, no web fonts. */
+:root {
+  --bg: #12100e;
+  --panel: #1d1a16;
+  --card: #242019;
+  --ink: #f5efe6;
+  --muted: #b8ab98;
+  --line: #3a3227;
+  --amber: #ffb020;
+  --amber-ink: #1a1206;
+  --green: #3ddc84;
+  --blue: #6cb8ff;
+  --grey: #9a8f7d;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+a { color: var(--amber); }
+.hero {
+  padding: 2.5rem 1.25rem 1.5rem;
+  text-align: center;
+  background: linear-gradient(180deg, #2a1c05, var(--bg));
+  border-bottom: 1px solid var(--line);
+}
+.kicker { letter-spacing: .18em; font-size: .8rem; color: var(--amber); margin: 0 0 .4rem; font-weight: 700; }
+.hero h1 { font-size: 3rem; margin: 0; letter-spacing: -.02em; }
+.tagline { max-width: 34rem; margin: .5rem auto; color: var(--muted); }
+.meta { font-size: .9rem; color: var(--muted); margin: .25rem 0 0; }
+main { max-width: 72rem; margin: 0 auto; padding: 1.25rem; }
+.controls {
+  display: flex; flex-wrap: wrap; gap: .75rem; align-items: end;
+  background: var(--panel); border: 1px solid var(--line);
+  border-radius: .75rem; padding: .9rem;
+}
+.controls input[type="search"] {
+  flex: 1 1 16rem; padding: .6rem .8rem; font: inherit;
+  background: var(--bg); color: var(--ink);
+  border: 1px solid var(--line); border-radius: .5rem;
+}
+.controls label { display: grid; gap: .25rem; font-size: .8rem; color: var(--muted); }
+.controls select {
+  padding: .55rem .6rem; font: inherit; color: var(--ink);
+  background: var(--bg); border: 1px solid var(--line); border-radius: .5rem;
+}
+.count { color: var(--muted); font-size: .9rem; margin: 1rem 0 .75rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); gap: 1rem; }
+.card {
+  background: var(--card); border: 1px solid var(--line);
+  border-radius: .75rem; padding: 1rem; display: flex; flex-direction: column; gap: .4rem;
+}
+.card-top { display: flex; justify-content: space-between; gap: .5rem; align-items: center; }
+.cat { font-size: .8rem; color: var(--muted); }
+.card h3 { margin: .1rem 0; font-size: 1.05rem; line-height: 1.3; }
+.card h3 a { color: var(--ink); text-decoration: none; }
+.card h3 a:hover { text-decoration: underline; }
+.brand { margin: 0; color: var(--muted); font-size: .9rem; }
+.prices { margin: .2rem 0 0; display: flex; gap: .5rem; align-items: baseline; flex-wrap: wrap; }
+.prices .sale { font-size: 1.5rem; font-weight: 800; color: var(--amber); }
+.prices.big .sale { font-size: 2.2rem; }
+.prices .usual { text-decoration: line-through; color: var(--muted); }
+.prices .pct {
+  background: #3d2a05; color: var(--amber); font-weight: 700;
+  border-radius: .4rem; padding: .1rem .45rem; font-size: .85rem;
+}
+.save { margin: 0; font-weight: 700; color: var(--green); }
+.save.big { font-size: 1.1rem; }
+.checked { margin: 0; font-size: .85rem; color: var(--muted); }
+.note { color: var(--ink); }
+.card-actions { display: flex; gap: .5rem; margin-top: auto; padding-top: .5rem; flex-wrap: wrap; }
+.btn {
+  display: inline-block; padding: .5rem .85rem; border-radius: .5rem;
+  border: 1px solid var(--line); color: var(--ink); text-decoration: none; font-weight: 600;
+}
+.btn.primary { background: var(--amber); color: var(--amber-ink); border-color: var(--amber); }
+.btn.big { padding: .7rem 1.1rem; font-size: 1.05rem; }
+.verdict { border-radius: .4rem; padding: .15rem .5rem; font-size: .8rem; font-weight: 700; white-space: nowrap; }
+.verdict-low { background: #0d3b22; color: var(--green); }
+.verdict-strong { background: #12324a; color: var(--blue); }
+.verdict-routine { background: #33302b; color: var(--grey); }
+.detail {
+  background: var(--card); border: 1px solid var(--line);
+  border-radius: .75rem; padding: 1.5rem; max-width: 46rem;
+}
+.detail h2 { margin: .3rem 0; font-size: 1.6rem; }
+.crumbs { margin: 0 0 .5rem; color: var(--muted); font-size: .9rem; }
+.compare {
+  margin-top: 1.25rem; padding-top: 1rem;
+  border-top: 1px solid var(--line);
+}
+.compare h2 { font-size: 1.1rem; }
+.empty { padding: 2rem 1rem; text-align: center; color: var(--muted); }
+.how {
+  margin-top: 2rem; background: var(--panel);
+  border: 1px solid var(--line); border-radius: .75rem; padding: 1.25rem;
+}
+.how h2 { margin-top: 0; }
+.how li { margin: .4rem 0; }
+footer { text-align: center; color: var(--muted); font-size: .85rem; padding: 1.5rem 1rem 2.5rem; }
+@media (max-width: 560px) {
+  .hero h1 { font-size: 2.2rem; }
+  .controls { flex-direction: column; align-items: stretch; }
+  .controls input[type="search"] { flex: none; }
+  main { padding: .75rem; }
+}

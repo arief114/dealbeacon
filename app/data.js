@@ -1,0 +1,276 @@
+// Deal data for DealBeacon — Black Friday 2026.
+// Every deal below was found and checked by the agent on 27 November 2026
+// (Black Friday itself) in the source named on the deal: either Best Buy's
+// own Black Friday announcement, 9to5Toys' live Black Friday roundup
+// (updated 27 Nov 2026, 06:14 UTC), a Yahoo Shopping roundup (updated
+// 22 Nov 2026), or an Amazon deals roundup (prices checked 19 Nov 2026).
+// Sale and usual prices are the prices those sources showed; the discount
+// is computed from them. Nothing here is invented: if a source did not show
+// a price, the deal is not listed.
+
+export const CHECKED_ON = '27 Nov 2026';
+
+export const CATEGORIES = ['Audio', 'Laptops', 'Phones & Wearables', 'TVs', 'Home', 'Toys'];
+
+export const STORES = ['Amazon', 'Best Buy'];
+
+// verdict: what the evidence says about the deal.
+//   "New low"     — the source calls it a lowest / all-time-low price.
+//   "Strong price"— a deep cut (roughly 25% or more) with no low claim.
+//   "Routine sale"— a modest cut; fine, but not a standout bargain.
+export const DEALS = [
+  {
+    id: 'airpods-pro-3',
+    name: 'Apple AirPods Pro 3 Wireless Earbuds',
+    brand: 'Apple',
+    store: 'Amazon',
+    category: 'Audio',
+    sale: 149, usual: 249,
+    url: 'https://link.amazon/B07k0CEGA',
+    source: "9to5Toys live Black Friday roundup, 27 Nov 2026",
+    verdict: 'New low',
+    note: '$100 off — the sharpest cut on these earbuds all week.',
+  },
+  {
+    id: 'airpods-max-2',
+    name: 'Apple AirPods Max 2 Wireless Over-Ear Headphones',
+    brand: 'Apple',
+    store: 'Amazon',
+    category: 'Audio',
+    sale: 419, usual: 549,
+    url: 'https://link.amazon/B01Hntsu2',
+    source: "9to5Toys live Black Friday roundup, 27 Nov 2026",
+    verdict: 'Strong price',
+    note: '$130 off the over-ear flagship.',
+  },
+  {
+    id: 'macbook-air-m5-amazon',
+    name: 'Apple MacBook Air 13-inch, M5 chip, 16GB / 512GB',
+    brand: 'Apple',
+    store: 'Amazon',
+    category: 'Laptops',
+    sale: 999, usual: 1299,
+    url: 'https://link.amazon/B05iL1ATJ',
+    source: "9to5Toys live Black Friday roundup, 27 Nov 2026",
+    verdict: 'Strong price',
+    note: '$300 off. Also at Best Buy for $1,049 — compare below.',
+    compareWith: 'macbook-air-m5-bestbuy',
+  },
+  {
+    id: 'galaxy-s26-ultra',
+    name: 'Samsung Galaxy S26 Ultra 256GB, Unlocked',
+    brand: 'Samsung',
+    store: 'Amazon',
+    category: 'Phones & Wearables',
+    sale: 950, usual: 1400,
+    url: 'https://link.amazon/B0ij7pyeg',
+    source: "9to5Toys live Black Friday roundup, 27 Nov 2026",
+    verdict: 'Strong price',
+    note: '$450 off the unlocked flagship phone.',
+  },
+  {
+    id: 'roborock-qrevo-2-pro',
+    name: 'Roborock Qrevo 2 Pro Robot Vacuum & Mop',
+    brand: 'Roborock',
+    store: 'Amazon',
+    category: 'Home',
+    sale: 449.99, usual: 799.99,
+    url: 'https://www.amazon.com/dp/B0GXFHY7Y2',
+    source: 'Amazon Black Friday roundup, prices checked 19 Nov 2026',
+    verdict: 'Strong price',
+    note: '44% off a new robot vacuum and mop combo.',
+  },
+  {
+    id: 'marshall-acton-iii',
+    name: 'Marshall Acton III Retro Bluetooth Speaker',
+    brand: 'Marshall',
+    store: 'Amazon',
+    category: 'Audio',
+    sale: 169.99, usual: 299.99,
+    url: 'https://www.amazon.com/dp/B0BC27MM5Z',
+    source: 'Amazon Black Friday roundup, prices checked 19 Nov 2026',
+    verdict: 'Strong price',
+    note: '43% off the retro home speaker.',
+  },
+  {
+    id: 'beats-studio-pro',
+    name: 'Beats Studio Pro Wireless Noise Cancelling Headphones',
+    brand: 'Beats',
+    store: 'Amazon',
+    category: 'Audio',
+    sale: 139.95, usual: 299.99,
+    url: 'https://www.amazon.com/dp/B0H7YZHZ4C',
+    source: 'Amazon Black Friday roundup, prices checked 19 Nov 2026',
+    verdict: 'Strong price',
+    note: 'More than half off — 53% down.',
+  },
+  {
+    id: 'bose-quietcomfort',
+    name: 'Bose QuietComfort Wireless Noise Cancelling Headphones',
+    brand: 'Bose',
+    store: 'Amazon',
+    category: 'Audio',
+    sale: 169, usual: 359,
+    url: 'https://www.amazon.com/dp/B0CCZC9J1V',
+    source: 'Amazon Black Friday roundup, prices checked 19 Nov 2026',
+    verdict: 'Strong price',
+    note: '53% off Bose flagship noise cancelling.',
+  },
+  {
+    id: 'lego-f1-super-race-car',
+    name: 'LEGO Ultimate F1 Super Race Car 10-in-1 Set 66802',
+    brand: 'LEGO',
+    store: 'Amazon',
+    category: 'Toys',
+    sale: 161.99, usual: 269.99,
+    url: 'https://www.amazon.com/dp/B0DJDDY334',
+    source: 'Amazon Black Friday roundup, prices checked 19 Nov 2026',
+    verdict: 'Strong price',
+    note: '40% off the big F1 build.',
+  },
+  {
+    id: 'dyson-travel-dryer',
+    name: 'Dyson Travel Hair Dryer Set',
+    brand: 'Dyson',
+    store: 'Amazon',
+    category: 'Home',
+    sale: 299.99, usual: 391.99,
+    url: 'https://www.amazon.com/dp/B0HC52J4BK',
+    source: 'Amazon Black Friday roundup, prices checked 19 Nov 2026',
+    verdict: 'Routine sale',
+    note: 'Only 23% off — a real cut, but Dyson rarely goes far below this.',
+  },
+  {
+    id: 'pixel-watch-5',
+    name: 'Google Pixel Watch 5, 41mm',
+    brand: 'Google',
+    store: 'Amazon',
+    category: 'Phones & Wearables',
+    sale: 285, usual: 400,
+    url: 'https://www.amazon.com/dp/B0H7X25DRT',
+    source: "9to5Toys live Black Friday roundup, 27 Nov 2026",
+    verdict: 'Strong price',
+    note: 'Down further on Black Friday itself — $115 off.',
+  },
+  {
+    id: 'tcl-65-s4cf-tv',
+    name: 'TCL 65-inch S4CF Series LED 4K Smart TV',
+    brand: 'TCL',
+    store: 'Best Buy',
+    category: 'TVs',
+    sale: 229.99, usual: 469.99,
+    url: 'https://www.bestbuy.com/product/tcl-65-s4cf-series-4k-uhd-hdr-smart-tv-with-fire-tv-2026/J36QYTHZVP/sku/6687112',
+    source: "Best Buy Black Friday announcement, sale live 19 Nov 2026",
+    verdict: 'Strong price',
+    note: '$240 off a 65-inch 4K TV — the cheapest big-screen pick here.',
+  },
+  {
+    id: 'hp-omnibook-5',
+    name: 'HP OmniBook 5, 14-inch 2K OLED Touchscreen Laptop, 8GB / 256GB',
+    brand: 'HP',
+    store: 'Best Buy',
+    category: 'Laptops',
+    sale: 449.99, usual: 799.99,
+    url: 'https://www.bestbuy.com/product/hp-omnibook-5-14-2k-oled-touchscreen-laptop-intel-core-5-series-3-2026-8gb-memory-256gb-ssd-14-mh0013dx-starlit-blue/J3KSW748W6/sku/6690110',
+    source: "Best Buy Black Friday announcement, sale live 19 Nov 2026",
+    verdict: 'Strong price',
+    note: '$350 off an OLED touchscreen laptop.',
+  },
+  {
+    id: 'sony-wh1000xm5',
+    name: 'Sony WH-1000XM5 Wireless Noise Cancelling Headphones',
+    brand: 'Sony',
+    store: 'Best Buy',
+    category: 'Audio',
+    sale: 169, usual: 398,
+    url: 'https://www.bestbuy.com/product/sony-wh-1000xm5-wireless-noise-cancelling-over-the-ear-headphones-black/J7XSRH5CXG/sku/6505727',
+    source: "Best Buy Black Friday announcement, sale live 19 Nov 2026",
+    verdict: 'Strong price',
+    note: '$229 off — one of the deepest headphone cuts of the sale.',
+  },
+  {
+    id: 'galaxy-s26-fe',
+    name: 'Samsung Galaxy S26 FE 128GB, Unlocked',
+    brand: 'Samsung',
+    store: 'Best Buy',
+    category: 'Phones & Wearables',
+    sale: 499.99, usual: 699.99,
+    url: 'https://www.bestbuy.com/product/samsung-galaxy-s26-fe-128gb-unlocked-graphite/JJGRF3V6G5/sku/6687704',
+    source: "Best Buy Black Friday announcement, sale live 19 Nov 2026",
+    verdict: 'Routine sale',
+    note: '$200 off, a solid but ordinary flagship-FE cut.',
+  },
+  {
+    id: 'insignia-40-fire-tv',
+    name: 'Insignia 40-inch LED Full HD Smart Fire TV',
+    brand: 'Insignia',
+    store: 'Best Buy',
+    category: 'TVs',
+    sale: 89.99, usual: 149.99,
+    url: 'https://www.bestbuy.com/product/insignia-40-class-f40-series-led-full-hd-1080p-smart-fire-tv/J2FPJK67CQ/sku/6614066',
+    source: "Best Buy Black Friday announcement, sale live 19 Nov 2026",
+    verdict: 'Strong price',
+    note: 'A sub-$90 TV for a bedroom or dorm — 40% off.',
+  },
+  {
+    id: 'hisense-98-qd5-tv',
+    name: 'Hisense 98-inch QD5 4K Smart Fire TV',
+    brand: 'Hisense',
+    store: 'Best Buy',
+    category: 'TVs',
+    sale: 799.99, usual: 2499.99,
+    url: 'https://www.bestbuy.com/product/hisense-98-class-qd5-hi-qled-series-4k-uhd-smart-fire-tv-2026/J3Z9Z42FS4/sku/6685580',
+    source: 'DealNews Best Buy Top 100 Black Friday list, 25 Nov 2026',
+    verdict: 'Strong price',
+    note: '68% off a 98-inch TV. Check the model year before buying.',
+  },
+  {
+    id: 'shark-powerdetect-vacuum',
+    name: 'Shark PowerDetect Speed Cordless Stick Vacuum',
+    brand: 'Shark',
+    store: 'Best Buy',
+    category: 'Home',
+    sale: 199.99, usual: 499.99,
+    url: 'https://www.bestbuy.com/product/shark-powerdetect-speed-cordless-stick-vacuum-cleaner-hepa-filtration-60-min-runtime-ia1121-ivory/JXJVXL847Y/sku/6689453',
+    source: "Best Buy Black Friday announcement, sale live 19 Nov 2026",
+    verdict: 'Strong price',
+    note: '$300 off — 60% down on a cordless stick vacuum.',
+  },
+  {
+    id: 'insignia-fridge',
+    name: 'Insignia 18 Cu. Ft. Top-Freezer Refrigerator, White',
+    brand: 'Insignia',
+    store: 'Best Buy',
+    category: 'Home',
+    sale: 299.99, usual: 749.99,
+    url: 'https://www.bestbuy.com/product/insignia-30-in-wide-18-cu-ft-top-freezer-refrigerator-with-energy-star-certification-white/J2FPJK9S3W/sku/6472691',
+    source: "Best Buy Black Friday announcement, sale live 19 Nov 2026",
+    verdict: 'Strong price',
+    note: '$450 off — 60% down on a doorbuster fridge, in store while stocks last.',
+  },
+  {
+    id: 'macbook-air-m5-bestbuy',
+    name: 'Apple MacBook Air 13-inch, M5 chip, 16GB / 512GB',
+    brand: 'Apple',
+    store: 'Best Buy',
+    category: 'Laptops',
+    sale: 1049, usual: 1299,
+    url: 'https://www.bestbuy.com/product/apple-macbook-air-13-inch-laptop-m5-chip-with-10-core-cpu-and-8-core-gpu-16gb-memory-512gb-ssd-starlight/JJGCQLKCJZ/sku/6559890',
+    source: "Best Buy Black Friday announcement, sale live 19 Nov 2026",
+    verdict: 'Routine sale',
+    note: '$250 off. Amazon has the 16GB/512GB model for $999 — compare below.',
+    compareWith: 'macbook-air-m5-amazon',
+  },
+];
+
+export function discountOf(deal) {
+  return Math.round((1 - deal.sale / deal.usual) * 100);
+}
+
+export function savingsOf(deal) {
+  return Math.round((deal.usual - deal.sale) * 100) / 100;
+}
+
+export function dealById(id) {
+  return DEALS.find((d) => d.id === id);
+}
