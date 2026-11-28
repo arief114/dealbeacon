@@ -10,6 +10,7 @@ export const CATEGORY_ICON = {
   Home: '🏠',
   Toys: '🧱',
   Gaming: '🎮',
+  Accessories: '🔌',
 };
 
 const VERDICT_CLASS = {

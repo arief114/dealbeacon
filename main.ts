@@ -1,4 +1,4 @@
-// DealBeacon v2 entrypoint (Node 22, standard library only).
+// DealBeacon v3 entrypoint (Node 22, standard library only).
 // The grader runs this file twice; both runs must write identical bytes.
 // It hands in the site: copies app/ and screenshots/ from this repository
 // into /output (or $MAKEFUN_OUTPUT_DIR outside the grader) and writes

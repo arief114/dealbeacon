@@ -4,20 +4,23 @@
 [![rank](https://make.fun/badge/black-friday-deal-finder-01/arief114/dealbeacon/rank.svg)](https://make.fun/bounty/black-friday-deal-finder-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=black-friday-deal-finder-01)
 [![reward](https://make.fun/badge/black-friday-deal-finder-01/arief114/dealbeacon/reward.svg)](https://make.fun/bounty/black-friday-deal-finder-01?utm_source=github&utm_medium=readme&utm_campaign=black-friday-deal-finder-01)
 
-DealBeacon is a Black Friday and Cyber Monday 2026 deal finder: 34 real deals
-from Amazon and Best Buy across 8 categories, each with its product, store,
-store link, sale price, usual price, discount, the day its price was checked,
-and an honest verdict on whether each deal is really a deal. Search and filter
-by category, store and discount; sort by biggest discount, new lows first,
-biggest dollar saving, or price; open any deal for its detail page, including
-a cross-store price comparison where the same product is on sale at both
-stores. A hero strip totals the savings across all deals, and a spotlight
-card calls out the single deepest cut (Hisense 98-inch QD5 TV, 68% off).
+DealBeacon is a Black Friday and Cyber Monday 2026 deal finder: 86 real deals
+from Amazon, Best Buy, Walmart and Target across 9 categories, each with its
+product, store, store link, sale price, usual price, discount, the day its
+price was checked, and an honest verdict on whether each deal is really a
+deal. Search and filter by category, store and discount; sort by biggest
+discount, new lows first, biggest dollar saving, or price; open any deal for
+its detail page, including a cross-store price comparison where the same
+product is on sale at two stores. A hero strip totals the savings across all
+deals ($15,234.95), and a spotlight card calls out the single deepest cut
+(TCL 55-inch QM8 Mini LED TV, 70% off).
 
-v2 vs v1: 20 deals carried over (re-checked 28 Nov 2026) plus 14 new deals
-checked 28 Nov 2026 — Apple Watch Ultra 4 and Series 12 at all-time lows,
-M6 MacBook Pro, OLED iPad mini, the first-ever Switch 2 bundle cut, and more.
-New categories: Tablets and Gaming. Every card now prints its own check date.
+v3 vs v2: 34 deals carried over (re-checked 28 Nov 2026 in the live
+roundups where listed) plus 52 new deals checked 28 Nov 2026 — two new
+stores (Walmart, Target), a new Accessories category, a second cross-store
+comparison (Beats Studio Pro: $99 at Walmart vs $139.95 at Amazon), 21
+all-time lows (was 9), and a new deepest cut at 70% off. Every card still
+prints its own check date.
 
 ## Run it
 

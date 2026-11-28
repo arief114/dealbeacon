@@ -1,4 +1,4 @@
-// main.js — state, search, filters, sorting and hash routing for DealBeacon v2.
+// main.js — state, search, filters, sorting and hash routing for DealBeacon v3.
 // One job: behaviour. Rendering lives in views.js, data lives in data.js.
 import { CATEGORIES, STORES, DEALS, CHECKED_ON, dealById, discountOf, savingsOf } from './data.js';
 import { dealCard, dealDetail, emptyState, spotlightCard, money } from './views.js';
