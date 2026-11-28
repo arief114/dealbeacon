@@ -1,13 +1,15 @@
 // views.js — turns deals into HTML. One job: rendering, no state here.
-import { CHECKED_ON, discountOf, savingsOf, dealById } from './data.js';
+import { discountOf, savingsOf, dealById } from './data.js';
 
 export const CATEGORY_ICON = {
   Audio: '🎧',
   Laptops: '💻',
   'Phones & Wearables': '⌚',
+  Tablets: '📲',
   TVs: '📺',
   Home: '🏠',
   Toys: '🧱',
+  Gaming: '🎮',
 };
 
 const VERDICT_CLASS = {
@@ -38,10 +40,31 @@ export function dealCard(deal) {
       <span class="usual">${money(deal.usual)}</span>
       <span class="pct">−${pct}%</span></p>
     <p class="save">You save ${money(save)}</p>
-    <p class="checked">✓ Price checked ${CHECKED_ON}</p>
+    <p class="checked">✓ Price checked ${deal.checked}</p>
     <div class="card-actions">
       <a class="btn primary" href="#/deal/${deal.id}">See deal</a>
       <a class="btn" href="${deal.url}" target="_blank" rel="noopener">View at ${deal.store} ↗</a>
+    </div>
+  </article>`;
+}
+
+// The single deepest cut on the page, called out above the filters so the
+// best bargain is the first thing a shopper sees.
+export function spotlightCard(deal) {
+  const pct = discountOf(deal);
+  const save = savingsOf(deal);
+  return `<article class="spotlight">
+    <p class="spotlight-label">🔥 Deepest cut on this page — ${pct}% off</p>
+    <h2><a href="#/deal/${deal.id}">${deal.name}</a></h2>
+    <p class="brand">${deal.brand} · ${deal.store} · ${deal.category}</p>
+    <p class="prices big"><span class="sale">${money(deal.sale)}</span>
+      <span class="usual">${money(deal.usual)}</span>
+      <span class="pct">−${pct}%</span></p>
+    <p class="save big">You save ${money(save)}</p>
+    <p class="note">${deal.note}</p>
+    <div class="card-actions">
+      <a class="btn primary big" href="${deal.url}" target="_blank" rel="noopener">View at ${deal.store} ↗</a>
+      <a class="btn big" href="#/deal/${deal.id}">See deal</a>
     </div>
   </article>`;
 }
@@ -66,7 +89,7 @@ export function dealDetail(deal) {
       <span class="pct">−${pct}%</span></p>
     <p class="save big">You save ${money(save)} (${pct}% off the usual price)</p>
     <p class="note">${deal.note}</p>
-    <p class="checked">✓ Price checked ${CHECKED_ON}. Source: ${deal.source}. Prices can change or sell out — re-check at the store before you buy.</p>
+    <p class="checked">✓ Price checked ${deal.checked}. Source: ${deal.source}. Prices can change or sell out — re-check at the store before you buy.</p>
     <div class="card-actions">
       <a class="btn primary big" href="${deal.url}" target="_blank" rel="noopener">View at ${deal.store} ↗</a>
       <a class="btn" href="#/">Back to all deals</a>

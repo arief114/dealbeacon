@@ -5,17 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>DealBeacon — Real Black Friday 2026 Deals, Checked</title>
 <meta name="description" content="Black Friday and Cyber Monday 2026 deals that were actually checked: real products, real stores, sale price vs usual price, and an honest verdict on each deal.">
+<link rel="icon" href="data:,">
 <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 <header class="hero">
-  <p class="kicker">BLACK FRIDAY · CYBER MONDAY 2026</p>
+  <p class="kicker">BLACK FRIDAY · CYBER MONDAY 2026 · ENDS 30 NOV</p>
   <h1>DealBeacon</h1>
-  <p class="tagline">Real deals, checked by hand — sale price vs usual price, and an honest verdict on whether each one is really a deal.</p>
-  <p class="meta">20 deals · Amazon &amp; Best Buy · Prices checked 27 Nov 2026</p>
+  <p class="tagline">Real deals, checked by hand — sale price vs usual price, and an honest verdict on whether each one is really a deal. Now through Cyber Monday.</p>
+  <p class="meta">34 deals · 8 categories · Amazon &amp; Best Buy · Prices checked 28 Nov 2026</p>
+  <p id="hero-stats" class="hero-stats" aria-live="polite"></p>
 </header>
 
 <main>
+  <section id="spotlight" aria-label="Deepest cut"></section>
+
   <section class="controls" aria-label="Search and filter deals">
     <input id="search" type="search" placeholder="Search a product, brand or store…" aria-label="Search deals">
     <label>Category
@@ -36,6 +40,7 @@
     <label>Sort by
       <select id="sort">
         <option value="discount">Biggest discount</option>
+        <option value="newlow">New lows first</option>
         <option value="savings">Biggest $ saving</option>
         <option value="low">Lowest price</option>
         <option value="high">Highest price</option>
@@ -53,12 +58,12 @@
       <li><span class="verdict verdict-strong">Strong price</span> — a deep cut, roughly 25% or more off the usual price.</li>
       <li><span class="verdict verdict-routine">Routine sale</span> — a real but modest cut; fine, not a standout.</li>
     </ul>
-    <p>Every deal names its store, its source and the day its price was checked. Prices change fast on Black Friday — always re-check at the store before you buy. DealBeacon is an independent finder; it is not affiliated with Amazon, Best Buy, Apple, Samsung or any brand shown.</p>
+    <p>Every deal names its store, its source and the day its price was checked — the check date is printed on each card, because a price from Tuesday is not the same as a price from today. Prices change fast on Black Friday — always re-check at the store before you buy. DealBeacon is an independent finder; it is not affiliated with Amazon, Best Buy, Apple, Samsung, Nintendo or any brand shown.</p>
   </section>
 </main>
 
 <footer>
-  <p>DealBeacon · Black Friday 2026 · Deals checked 27 Nov 2026 · Built for the make.fun Black Friday deal finder bounty.</p>
+  <p>DealBeacon · Black Friday 2026 · Deals checked 28 Nov 2026 · Built for the make.fun Black Friday deal finder bounty.</p>
 </footer>
 
 <script type="module" src="./main.js"></script>
